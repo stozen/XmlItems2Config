@@ -1,0 +1,5 @@
+D:\stozen@github.com\XmlItems2Config\XmlItems2Config\obj\Debug\XmlItems2Config.csprojResolveAssemblyReference.cache
+D:\stozen@github.com\XmlItems2Config\XmlItems2Config\bin\Debug\XmlItems2Config.dll
+D:\stozen@github.com\XmlItems2Config\XmlItems2Config\bin\Debug\XmlItems2Config.pdb
+D:\stozen@github.com\XmlItems2Config\XmlItems2Config\obj\Debug\XmlItems2Config.dll
+D:\stozen@github.com\XmlItems2Config\XmlItems2Config\obj\Debug\XmlItems2Config.pdb
