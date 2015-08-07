@@ -9,10 +9,13 @@ namespace XmlItems2Config
     /// <typeparam name="T"></typeparam>
     public class XmlItemsRepository<T> where T : IItem
     {
+        /*
         private static volatile XmlItemsRepository<T> instance = null;
         private static object syncRoot = new Object();
+         * */
         private IList<T> list;
 
+        /*
         static XmlItemsRepository() { }
 
         private XmlItemsRepository(string configPath, string nodeItemName)
@@ -42,6 +45,21 @@ namespace XmlItems2Config
                 }
             }
             return instance;
+        }
+         * */
+
+        public XmlItemsRepository(string configPath, string nodeItemName)
+        {
+            try
+            {
+                XmlCollectionConfigHelper<T> helper = new XmlCollectionConfigHelper<T>();
+                helper.Load(System.AppDomain.CurrentDomain.BaseDirectory + configPath, nodeItemName);
+                list = helper.GetAll();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message, ex);
+            }
         }
 
         public IList<T> GetAll()
